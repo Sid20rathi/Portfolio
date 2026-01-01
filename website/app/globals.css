@@ -127,3 +127,28 @@
     mix-blend-mode: normal;
 }
 
+/* app/globals.css */
+
+@layer utilities {
+  /* Custom Vertical Dashed Line (Left & Right) 
+     - 1px width
+     - 24px height loop (12px dash, 12px gap)
+  */
+  .dashed-x {
+    background-image: 
+      linear-gradient(to bottom, currentColor 50%, transparent 50%),
+      linear-gradient(to bottom, currentColor 50%, transparent 50%);
+    background-position: left top, right top;
+    background-size: 1px 22px; /* <--- Change 24px to adjust dash length */
+    background-repeat: repeat-y;
+  }
+
+  
+  .dashed-b {
+    background-image: linear-gradient(to right, currentColor 50%, transparent 50%);
+    background-position: left bottom;
+    background-size: 2px 1px; /* <--- Change 24px to adjust dash length */
+    background-repeat: repeat-x;
+  }
+}
+

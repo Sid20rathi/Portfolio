@@ -128,7 +128,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-2 pt-11 font-mono hover:text-blue-600 dark:text-white dark:hover:text-blue-400 "
+          className="relative px-1 pt-11  tracking-tighter font-semibold hover:text-blue-600 dark:text-white dark:hover:text-blue-400 "
           key={`link-${idx}`}
           href={item.link}
         >

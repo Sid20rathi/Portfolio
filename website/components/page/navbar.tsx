@@ -38,7 +38,7 @@ export function Navbarpage() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="relative z-50 pointer-events-auto pt-6 cursor-pointer ">
+          <div className="relative z-50 pointer-events-auto pt-8 cursor-pointer ">
   <AnimatedThemeToggler />
 </div>
           
