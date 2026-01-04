@@ -11,6 +11,9 @@ import { IconCircleHalf2 } from "@tabler/icons-react";
 import { FloatingDockPage } from "@/components/floatnavbar";
 import Hero from "@/components/page/hero";
 import Navbar from "@/components/page/navbar";
+import About from "@/components/page/about";
+import Experience from "@/components/page/experience";
+import { DockDemo } from "@/components/newdock";
 
 
 
@@ -26,8 +29,10 @@ export default function Home() {
   }
   return (
     <div className=" flex  justify-center items-center flex flex-col">
-      <div className=" w-[60%]">
+      <div className=" w-[60%]  ">
            {/* Navbar */}
+           <FloatingDockPage/>
+          
  
 
     
@@ -37,7 +42,15 @@ export default function Home() {
         <Hero/>
       </div>
 
-      <FloatingDockPage/>
+      <div> 
+        <About/>
+
+      </div>
+      <div>
+        <Experience/>
+      </div>
+
+      
       
         
 

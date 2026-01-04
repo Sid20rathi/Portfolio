@@ -9,7 +9,7 @@ export default function Hero() {
     audio.play().catch((err) => console.error("Audio playback failed:", err));
   }
   return (
-    <div className="h-full w-full   ">
+    <div className="h-full w-full border-b-2 border-x-2 border-dashed  ">
       <div className="  flex flex-col justify-start md:justify-start lg:justify-start xl:justify-start">
         <div className="relative ">
           <img
@@ -54,11 +54,11 @@ export default function Hero() {
           <div className="flex flex-col  font-serif text-xs ">Hi there, I'm</div>
           <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row ">
             <span className="inline-block  text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif">Siddhant Rathi </span>
-            <div className="pb-10 flex ">
+            <div className="pb-3 flex ">
 
 
               <WordRotate
-                className="pl-2  pb-36   sm:text-3xl md:text-4xl font-serif tracking-tighter text-neutral-500 dark:text-white hover:text-blue-400 dark:hover:text-blue-400"
+                className="pl-2   sm:text-3xl md:text-4xl font-serif tracking-tighter text-neutral-500 dark:text-white hover:text-blue-400 dark:hover:text-blue-400"
                 words={["- AI Engineer", "- Full Stack web developer", " - Developer"]}
               />
             </div>

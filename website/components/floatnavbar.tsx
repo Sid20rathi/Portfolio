@@ -60,10 +60,10 @@ export function FloatingDockPage() {
 
   ];
   return (
-    <div className="fixed bottom-10 left-0 right-0 z-50 flex flex-col items-center justify-end pointer-events-none">
+    <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-end pointer-events-none backdrop-blur-xs">
 
 
-      <div className="pointer-events-auto pb-5">
+      <div className="pointer-events-auto pb-7 ">
         <FloatingDock
           mobileClassName="translate-y-0"
           items={links}
