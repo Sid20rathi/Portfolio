@@ -23,7 +23,7 @@ export const ExperienceLoad = ({
         className="flex flex-row pl-3 pt-3 pb-1  cursor-pointer select-none group"
         onClick={() => setOpen(!open)}
       >
-        <img src={logo} alt="logo" className="size-12" />
+        <img src={logo} alt="logo" className="size-12 rounded-full" />
 
         <div className="flex flex-row justify-between w-full pl-3">
           <div className="flex flex-col">

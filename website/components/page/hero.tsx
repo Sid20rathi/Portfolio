@@ -58,7 +58,7 @@ export default function Hero() {
 
 
               <WordRotate
-                className="pl-2   sm:text-3xl md:text-4xl font-serif tracking-tighter text-neutral-500 dark:text-white hover:text-blue-400 dark:hover:text-blue-400"
+                className="pl-2   sm:text-2xl md:text-3xl font-serif tracking-tighter text-neutral-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-gray-500"
                 words={["- AI Engineer", "- Full Stack web developer", " - Developer"]}
               />
             </div>

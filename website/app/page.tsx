@@ -14,6 +14,7 @@ import Navbar from "@/components/page/navbar";
 import About from "@/components/page/about";
 import Experience from "@/components/page/experience";
 import { DockDemo } from "@/components/newdock";
+import Project from "@/components/page/project";
 
 
 
@@ -29,14 +30,7 @@ export default function Home() {
   }
   return (
     <div className=" flex  justify-center items-center flex flex-col">
-      <div className=" w-[60%]  ">
-           {/* Navbar */}
-           <FloatingDockPage/>
-          
- 
-
-    
-     
+      <div className=" w-[50%]  ">
       {/* Hero */}
       <div className=" w-full ">
         <Hero/>
@@ -49,6 +43,13 @@ export default function Home() {
       <div>
         <Experience/>
       </div>
+      <div className="pb-64 ">
+         <div>
+        <Project/>
+      </div>
+
+      </div>
+     
 
       
       
