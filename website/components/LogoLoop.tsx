@@ -2,21 +2,21 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 export type LogoItem =
   | {
-      node: React.ReactNode;
-      href?: string;
-      title?: string;
-      ariaLabel?: string;
-    }
+    node: React.ReactNode;
+    href?: string;
+    title?: string;
+    ariaLabel?: string;
+  }
   | {
-      src: string;
-      alt?: string;
-      href?: string;
-      title?: string;
-      srcSet?: string;
-      sizes?: string;
-      width?: number;
-      height?: number;
-    };
+    src: string;
+    alt?: string;
+    href?: string;
+    title?: string;
+    srcSet?: string;
+    sizes?: string;
+    width?: number;
+    height?: number;
+  };
 
 export interface LogoLoopProps {
   logos: LogoItem[];
@@ -324,14 +324,15 @@ export const LogoLoop = React.memo<LogoLoopProps>(
         }
 
         const isNodeItem = 'node' in item;
+        const title = (item as any).title;
 
-        const content = isNodeItem ? (
+        const logoVisual = isNodeItem ? (
           <span
             className={cx(
               'inline-flex items-center',
               'motion-reduce:transition-none',
               scaleOnHover &&
-                'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
+              'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
             aria-hidden={!!(item as any).href && !(item as any).ariaLabel}
           >
@@ -345,7 +346,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
               '[image-rendering:-webkit-optimize-contrast]',
               'motion-reduce:transition-none',
               scaleOnHover &&
-                'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
+              'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
             src={(item as any).src}
             srcSet={(item as any).srcSet}
@@ -353,16 +354,27 @@ export const LogoLoop = React.memo<LogoLoopProps>(
             width={(item as any).width}
             height={(item as any).height}
             alt={(item as any).alt ?? ''}
-            title={(item as any).title}
+            title={title}
             loading="lazy"
             decoding="async"
             draggable={false}
           />
         );
 
+        const content = title ? (
+          <div className="flex flex-col items-center justify-center gap-2">
+            {logoVisual}
+            <span className="text-sm font-medium text-center text-foreground whitespace-nowrap">
+              {title}
+            </span>
+          </div>
+        ) : (
+          logoVisual
+        );
+
         const itemAriaLabel = isNodeItem
-          ? ((item as any).ariaLabel ?? (item as any).title)
-          : ((item as any).alt ?? (item as any).title);
+          ? ((item as any).ariaLabel ?? title)
+          : ((item as any).alt ?? title);
 
         const inner = (item as any).href ? (
           <a

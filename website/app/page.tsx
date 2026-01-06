@@ -50,12 +50,10 @@ export default function Home() {
       </div>
 
       
-      <div className="">
+      <div className="pb-80">
         <Skills/>
       </div>
-      <div className="pb-64">
-        hey
-      </div>
+  
 
       
       
