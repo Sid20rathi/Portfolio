@@ -15,6 +15,7 @@ import About from "@/components/page/about";
 import Experience from "@/components/page/experience";
 import { DockDemo } from "@/components/newdock";
 import Project from "@/components/page/project";
+import Skills from "@/components/page/skills";
 
 
 
@@ -43,13 +44,18 @@ export default function Home() {
       <div>
         <Experience/>
       </div>
-      <div className="pb-64 ">
+      
          <div>
         <Project/>
       </div>
 
+      
+      <div className="">
+        <Skills/>
       </div>
-     
+      <div className="pb-64">
+        hey
+      </div>
 
       
       

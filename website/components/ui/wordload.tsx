@@ -25,8 +25,8 @@ export const ExperienceLoad = ({
       >
         <img src={logo} alt="logo" className="size-12 rounded-full" />
 
-        <div className="flex flex-row justify-between w-full pl-3">
-          <div className="flex flex-col">
+        <div className="flex flex-col md:flex-row justify-between w-full pl-3">
+          <div className="flex flex-col ">
             <div className="flex items-center gap-2 ">
               <h3 className="font-bold">{name}</h3>
               
