@@ -17,7 +17,7 @@ export function FloatingDockPage() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-black dark:text-white" />
       ),
       onClick: () => {
         window.open("/", "_blank");
@@ -27,7 +27,7 @@ export function FloatingDockPage() {
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-black dark:text-white" />
       ),
       onClick: () => {
         window.open("https://twitter.com/Siddhant_Rathi", "_blank");
@@ -36,7 +36,7 @@ export function FloatingDockPage() {
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-black dark:text-white" />
       ),
       onClick: () => {
         window.open("https://github.com/Siddhant-Rathi", "_blank");
@@ -46,7 +46,7 @@ export function FloatingDockPage() {
       title: "LinkedIn",
       icon: (
         <IconBrandLinkedin
-          className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+          className="h-full w-full text-black dark:text-white" />
       ),
       onClick: () => {
         window.open("https://www.linkedin.com/in/siddhant-rathi-048644224/", "_blank");
@@ -60,10 +60,10 @@ export function FloatingDockPage() {
 
   ];
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-end pointer-events-none backdrop-blur-xs">
+    <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-end pointer-events-none ">
 
 
-      <div className="pointer-events-auto pb-7 ">
+      <div className="pointer-events-auto pb-7  ">
         <FloatingDock
           mobileClassName="translate-y-0"
           items={links}

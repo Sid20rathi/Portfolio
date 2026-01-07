@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export const ExperienceLoad = ({
@@ -23,7 +24,7 @@ export const ExperienceLoad = ({
         className="flex flex-row pl-3 pt-3 pb-1  cursor-pointer select-none group"
         onClick={() => setOpen(!open)}
       >
-        <img src={logo} alt="logo" className="size-12 rounded-full" />
+        <Image src={logo} alt="logo" width={120} height={120} draggable={false} className="size-12 rounded-full object-contain" />
 
         <div className="flex flex-col md:flex-row justify-between w-full pl-3">
           <div className="flex flex-col ">

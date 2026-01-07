@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { WordRotate } from "../ui/word-rotate";
+import Image from "next/image";
 
 export default function Hero() {
   const [visible, setVisible] = useState<boolean>(false);
@@ -12,38 +13,41 @@ export default function Hero() {
     <div className="h-full w-full border-b-2 border-x-2 border-dashed  ">
       <div className="  flex flex-col justify-start md:justify-start lg:justify-start xl:justify-start">
         <div className="relative ">
-          <img
+          <Image
             src="/dash.png"
             alt="profile"
-            width={120}
-            height={120}
+            width={1000}
+            height={1000}
+            draggable={false}
             className="  z-40 absolute h-50 w-screen "
           />
           <div className="pt-28 pl-11">
-          <button onClick={visibleProf}>
-            {visible ? <div className="">
-              <img
-                src="/siddhant.png"
+            <button onClick={visibleProf}>
+              {visible ? <div className="">
+                <Image
+                  src="/siddhant.png"
+                  alt="profile"
+                  width={120}
+                  draggable={false}
+                  height={120}
+                  className="rounded-full absolute   cursor-pointer z-50 shadow-2xl "
+                />
+
+              </div> : <Image
+                src="/logo1.png"
                 alt="profile"
                 width={120}
                 height={120}
-                className="rounded-full absolute   cursor-pointer z-50 shadow-2xl "
-              />
+                draggable={false}
+                className="rounded-full absolute cursor-pointer z-50 shadow-2xl "
+              />}
+            </button>
 
-            </div> : <img
-              src="/logo1.png"
-              alt="profile"
-              width={120}
-              height={120}
-              className="rounded-full absolute cursor-pointer z-50 shadow-2xl "
-            />}
-          </button>
 
+          </div>
 
         </div>
 
-        </div>
-        
 
 
 

@@ -16,6 +16,7 @@ import Experience from "@/components/page/experience";
 import { DockDemo } from "@/components/newdock";
 import Project from "@/components/page/project";
 import Skills from "@/components/page/skills";
+import Activity from "@/components/page/Activity";
 
 
 
@@ -50,8 +51,11 @@ export default function Home() {
       </div>
 
       
-      <div className="pb-80">
+      <div className="">
         <Skills/>
+      </div>
+      <div className="pb-80">
+        <Activity/>
       </div>
   
 

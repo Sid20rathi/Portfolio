@@ -1,15 +1,35 @@
 "use client";
 
-type LogosRowProps = {
-  name: string[];
+export type LogoItem =
+  | {
+    node: React.ReactNode;
+    href?: string;
+    title?: string;
+    ariaLabel?: string;
+  }
+  | {
+    src: string;
+    alt?: string;
+    href?: string;
+    title?: string;
+    srcSet?: string;
+    sizes?: string;
+    width?: number;
+    height?: number;
+  };
+
+  type LogosRowProps = {
+  name: LogoItem[];
 };
+
+
 
 export const LogosRow = ({ name }: LogosRowProps) => {
   return (
     <div className="flex flex-wrap gap-1">
       {name.map((item) => (
         <span
-          key={item}
+          key={item.title}
           className="
             rounded-full
             bg-black
@@ -29,7 +49,7 @@ export const LogosRow = ({ name }: LogosRowProps) => {
             
           "
         >
-          {item}
+          {item.title}
         </span>
       ))}
     </div>

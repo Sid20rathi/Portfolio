@@ -17,13 +17,13 @@ const imageLogos = [
   { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
 ];
 
-export default function Logos() {
+export default function Logos({display}: {display: boolean}) {
   return (
     <div>
         <div>
                 <div style={{ height: '100px', position: 'relative', overflow: 'hidden'}} className=''>
-      {/* Basic horizontal loop */}
-      <LogoLoop
+      
+      {!display?<LogoLoop
         logos={techLogos}
         speed={50}
         direction="left"
@@ -34,18 +34,18 @@ export default function Logos() {
         fadeOut
         fadeOutColor=""
         ariaLabel=""
-      />
+      />: <div>
+           <div className='w-fit'>
+            <LogosRow name={techLogos}/>
+           </div>
+
+        </div> }
       
       
 
     </div>
         </div>
-        <div>
-           <div className='w-fit'>
-            <LogosRow name={names}/>
-           </div>
-
-        </div>
+         
     </div>
 
   );
