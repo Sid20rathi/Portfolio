@@ -20,21 +20,21 @@ export default function ActivityComponent() {
             </div>
             <div className="p-3 border-x-2 border-dashed border-b-2 ">
                 <div className="grid grid-cols-2 overflow-hidden">
-                    <div className="bg-red-500">
-            <GitHubCalendar
-            username="sid20rathi"
-            transformData={selectLastTwoMonths}
-            labels={{
-              totalCount: "{{count}} Github Contributions in the last 2 months",
-            }}
-            colorScheme='light'
-            maxLevel={0}
-           
-         
-            
-            
-            />
-        </div>
+                    <div className="">
+                        <GitHubCalendar
+                            username="sid20rathi"
+                            transformData={selectLastTwoMonths}
+                            labels={{
+                                totalCount: "{{count}} Github Contributions in the last 2 months",
+                            }}
+                            colorScheme='light'
+                            maxLevel={0}
+
+
+
+
+                        />
+                    </div>
 
                 </div>
             </div>
