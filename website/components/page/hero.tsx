@@ -10,7 +10,7 @@ export default function Hero() {
     audio.play().catch((err) => console.error("Audio playback failed:", err));
   }
   return (
-    <div className="h-full w-full border-b-2 border-x-2 border-dashed  ">
+    <div className="h-full w-full border-b-2 border-x-2 border-none  ">
       <div className="  flex flex-col justify-start md:justify-start lg:justify-start xl:justify-start">
         <div className="relative ">
           <Image

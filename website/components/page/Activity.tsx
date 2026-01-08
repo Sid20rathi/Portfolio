@@ -14,11 +14,11 @@ export default function ActivityComponent() {
 
     return (
         <div >
-            <div className="border-x-2 border-dashed border-b-2 font-serif text-lg p-3 uppercase tracking-[0.01em]">
+            <div className="border-x-2 border-none border-b-2 font-bold text-xl pt-10 pl-3 pr-3 uppercase tracking-[0.01em]">
                 My Activity
 
             </div>
-            <div className="p-3 border-x-2 border-dashed border-b-2 ">
+            <div className="p-3 border-x-2 border-none border-b-2 ">
                 <div className="grid grid-cols-2 overflow-hidden">
                     <div className="">
                         <GitHubCalendar

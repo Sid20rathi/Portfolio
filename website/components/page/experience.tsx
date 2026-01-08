@@ -28,15 +28,15 @@ export default function Experience() {
 
     return (
         <div>
-            <div className="h-full w-full border-b-2 border-x-2 border-dashed ">
-                <div className="font-serif text-lg p-3 uppercase tracking-[0.01em]">
+            <div className="h-full w-full border-b-2 border-x-2 border-none ">
+                <div className="font-bold text-xl pt-10 pl-3 uppercase tracking-[0.01em]">
                     <h1>Experience</h1>
                 </div>
                 <div>
                 </div>
 
             </div>
-            <div className="h-full w-full border-b-2 border-x-2 border-dashed py-3 pb-6">
+            <div className="h-full w-full border-b-2 border-x-2 border-none py-3 pb-6">
                 <div>
 
                     {workdone.map((workdone, index) => {

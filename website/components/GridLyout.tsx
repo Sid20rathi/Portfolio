@@ -10,7 +10,7 @@ export default function GridLayout({ children }: GridLayoutProps) {
     <div className="min-h-screen w-full  flex justify-center text-gray-800">
 
 
-      <div className="w-full max-w-3xl border-x border-dashed border-gray-300 min-h-screen ">
+      <div className="w-full max-w-3xl border-x border-none border-gray-300 min-h-screen ">
 
 
 
@@ -19,7 +19,7 @@ export default function GridLayout({ children }: GridLayoutProps) {
           {children}
 
 
-          <div className="my-8 border-t border-dashed border-gray-300" />
+          <div className="my-8 border-t border-none border-gray-300" />
 
 
 

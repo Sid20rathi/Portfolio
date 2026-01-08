@@ -26,7 +26,7 @@ export type LogoItem =
 
 export const LogosRow = ({ name }: LogosRowProps) => {
   return (
-    <div className="flex flex-wrap gap-1">
+    <div className="flex flex-wrap gap-1 p-1 ">
       {name.map((item) => (
         <span
           key={item.title}
@@ -39,7 +39,7 @@ export const LogosRow = ({ name }: LogosRowProps) => {
             text-sm
             font-serif
             text-white
-            shadow-md
+            shadow-2xl
             transition
             hover:scale-105
             hover:bg-zinc-500
