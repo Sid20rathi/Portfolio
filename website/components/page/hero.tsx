@@ -10,80 +10,48 @@ export default function Hero() {
     audio.play().catch((err) => console.error("Audio playback failed:", err));
   }
   return (
-    <div className="h-full w-full border-b-2 border-x-2 border-none  ">
-      <div className="  flex flex-col justify-start md:justify-start lg:justify-start xl:justify-start">
-        <div className="relative ">
-          <Image
-            src="/dash.png"
-            alt="profile"
-            width={1000}
-            height={1000}
-            draggable={false}
-            className="  z-40 absolute h-50 w-screen "
-          />
-          <div className="pt-28 pl-11">
-            <button onClick={visibleProf}>
-              {visible ? <div className="">
-                <Image
-                  src="/siddhant.png"
-                  alt="profile"
-                  width={120}
-                  draggable={false}
-                  height={120}
-                  className="rounded-full absolute   cursor-pointer z-50 shadow-2xl "
-                />
-
-              </div> : <Image
-                src="/logo1.png"
-                alt="profile"
-                width={120}
-                height={120}
-                draggable={false}
-                className="rounded-full absolute cursor-pointer z-50 shadow-2xl "
-              />}
-            </button>
-
-
+    <div className=" w-full pt-10 ">
+          
+            {/* <Hero/> */}
+    
+            <section id="hero">
+              <div className ="mx-auto w-full max-w-3xl space-y-8 pl-3 pr-3 ">
+                <div className=" flex justify-between">
+                  <div className="flex-col flex flex-1 space-y-1.5">
+                    <div className="flex">
+                      <span className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none" >Hi, I'm Siddhant</span>
+                      </div>
+                      <div className="flex">
+                        <span className="inline-block max-w-[600px] md:text-xl text-muted-foreground">Building intelligent AI agents that remember and reason.</span>
+                        </div>
+                        <div><a className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline transition-all mt-2" href="mailto:siddhant02rathi@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="size-4">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>siddhant02rathi@gmail.com</a></div></div>
+                        <div className=""><span className=" flex rounded-full size-32 sm:size-36 flex-shrink-0">
+                         <button onClick={visibleProf}>
+                                       {visible ? <div className="">
+                                         <Image
+                                           src="/siddhant.png"
+                                           alt="profile"
+                                           width={140}
+                                           draggable={false}
+                                           height={140}
+                                           className="rounded-full  cursor-pointer z-50   hover:shadow-2xl shadow-lg transition-shadow duration-500  "
+                                         />
+                         
+                                       </div> : <Image
+                                         src="/logo1.png"
+                                         alt="profile"
+                                         width={140}
+                                         height={140}
+                                         draggable={false}
+                                         className="rounded-full  cursor-pointer z-50. shadow-lg  hover:shadow-2xl transition-shadow duration-500 "
+                                       />}
+                                     </button></span>
+                          </div>
+                        </div>
+                        </div>
+                        </section>
           </div>
-
-        </div>
-
-
-
-
-
-
-
-        <div className="pt-28 pl-2 font-serif">
-          <div className="flex flex-col  font-serif text-xs ">Hi there, I'm</div>
-          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row ">
-            <span className="inline-block  text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-serif">Siddhant Rathi </span>
-            <div className="pb-3 flex ">
-
-
-              <WordRotate
-                className="pl-2   sm:text-2xl md:text-3xl font-serif tracking-tighter text-neutral-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-gray-500"
-                words={["- AI Engineer", "- Full Stack web developer", " - Developer"]}
-              />
-            </div>
-
-
-
-
-          </div>
-
-        </div>
-
-
-
-
-
-      </div>
-
-
-
-
-    </div>
-
   );
 }
