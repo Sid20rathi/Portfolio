@@ -22,12 +22,12 @@ export default function Hero() {
                       <span className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none" >Hi, I'm Siddhant</span>
                       </div>
                       <div className="flex">
-                        <span className="inline-block max-w-[600px] md:text-xl text-muted-foreground">Building intelligent AI agents that remember and reason.</span>
+                        <span className="inline-block max-w-[600px] md:text-lg text-muted-foreground">Building intelligent AI agents that remember and reason.</span>
                         </div>
-                        <div><a className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline transition-all mt-2" href="mailto:siddhant02rathi@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="size-4">
+                        <div><a className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline transition-all mt-2 mb-16" href="mailto:siddhant02rathi@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="size-4">
                         <rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                         </svg>siddhant02rathi@gmail.com</a></div></div>
-                        <div className=""><span className=" flex rounded-full size-32 sm:size-36 flex-shrink-0">
+                        <div className="pr-12 pt-3"><span className=" flex rounded-full size-32 sm:size-30 flex-shrink-0 ">
                          <button onClick={visibleProf}>
                                        {visible ? <div className="">
                                          <Image

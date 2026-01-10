@@ -4,7 +4,7 @@ import { PulsatingButton } from "./pulsating-button";
 export default function Projectload({ name, description, status, image1, image2 }: any) {
   return (
 
-    <div className=" border-b-2 border rounded-2xl border-x-2 pl-3 pt-4 pb-2 pr-3 group hover:shadow-2xl transition-all duration-500 hover:scale-105">
+    <div className=" border-b-1 border rounded-2xl border-x-2 pl-3 pt-4 pb-2 pr-3 group hover:shadow-2xl transition-all duration-500 hover:scale-105">
       <div className="flex flex-col">
         <div className="flex flex-col md:flex-row justify-between ">
           <div>
